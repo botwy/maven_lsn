@@ -14,6 +14,7 @@
         <module>lsn12_thread</module>
         <module>lsn16_jit</module>
         <module>lsn13_concurrent</module>
+        <module>lsn14_socket</module>
     </modules>
 
 

@@ -8,6 +8,7 @@ public class ReminderMessager {
     public  static  void main (String... args) {
         Reminder reminder = new Reminder();
 
-        service.schedule(reminder,10, TimeUnit.MILLISECONDS );
+        service.schedule(reminder,10, TimeUnit.SECONDS );
+        service.shutdown();
     }
 }

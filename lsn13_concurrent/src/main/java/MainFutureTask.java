@@ -1,9 +1,7 @@
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.FutureTask;
 
-public class Main {
+import java.util.concurrent.*;
+
+public class MainFutureTask {
     public static void main(String... args) {
         MyCallable callable = new MyCallable();
         FutureTask<String> futureTask =
@@ -22,5 +20,7 @@ public class Main {
                 e.printStackTrace();
             }
         }
+
+        executor.shutdown();
     }
 }
