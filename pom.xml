@@ -15,6 +15,7 @@
         <module>lsn16_jit</module>
         <module>lsn13_concurrent</module>
         <module>lsn14_socket</module>
+        <module>lsn18_pattern_project</module>
     </modules>
 
 
