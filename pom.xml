@@ -16,6 +16,8 @@
         <module>lsn13_concurrent</module>
         <module>lsn14_socket</module>
         <module>lsn18_pattern_project</module>
+        <module>lsn19_pattern_continue</module>
+        <module>lsn21_jdbc</module>
     </modules>
 
 
