@@ -1,3 +1,5 @@
+package com.botwy.lsn21_jdbc.domen;
+
 import java.util.List;
 
 public class Person {
