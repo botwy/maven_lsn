@@ -1,6 +1,7 @@
+package com.nanospring;
+
 import org.jboss.errai.reflections.Reflections;
 import org.jboss.errai.reflections.scanners.SubTypesScanner;
-import sun.reflect.Reflection;
 
 import java.lang.reflect.Field;
 import java.util.Set;
@@ -15,13 +16,23 @@ public class Nanospring {
         beans = reflection.getSubTypesOf(Object.class);
     }
 
-   <T> T getBean(Class<T> type) {
-        for (Class<?> bean:beans) {
-            Field[] fields = bean.getDeclaredFields();
-            for (Field field:fields
-                 ) {
-                if (field.)
+    <T> T getBean(Class<T> type) throws IllegalAccessException, InstantiationException {
+        for (Class<?> bean : beans) {
+            if (bean.equals(type)) {
+                T instance = (T) bean.newInstance();
+                Field[] fields = bean.getDeclaredFields();
+                for (Field field : fields
+                        ) {
+                    if (field.isAnnotationPresent(Nanoannotation.class)) {
+                        field.setAccessible(true);
+                        field.set(instance, field.getClass().newInstance());
+
+                    }
+                }
+                return instance;
             }
+
         }
+        return null;
     }
 }

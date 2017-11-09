@@ -1,12 +1,13 @@
+package com.nanospring;
+
 import badcode.Engine;
 
 public class Car {
 
-
+    @Nanoannotation
     private Engine engine;
 
     public Car() {
-        engine = new Engine();
         System.out.println("create car");
     }
 
