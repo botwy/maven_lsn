@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lsn10_lambda/lsn10_lambda.iml" filepath="$PROJECT_DIR$/lsn10_lambda/lsn10_lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lsn11_thread/lsn11_thread.iml" filepath="$PROJECT_DIR$/lsn11_thread/lsn11_thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven_lsn.iml" filepath="$PROJECT_DIR$/maven_lsn.iml" />
+    </modules>
+  </component>
+</project>
