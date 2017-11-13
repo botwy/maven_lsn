@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="car" class="com.sbt.pojo.Car">
+        <constructor-arg>
+            <ref bean="engine"/>
+        </constructor-arg>
+    </bean>
+
+    <bean id="engine" class="com.sbt.pojo.Engine"></bean>
+
+
+    <!--добавление логирования для метода com.sbt.pojo.Engine.start с помощью aop-->
+<!--
+
+
+    <bean id="logAdvice" class="com.sbt.pojo.LogAdvice"/>
+
+    <aop:config>
+        <aop:aspect ref="logAdvice">
+            <aop:pointcut id="logging" expression=
+                    "execution(* execution(* com.sbt.pojo.Engine.start(..))"
+            />
+            &lt;!&ndash; Совет, выполняемый и до, и после &ndash;&gt;
+            <aop:around
+                    pointcut-ref="logging"
+                    method="around"/>
+        </aop:aspect>
+    </aop:config>
+
+    -->
+</beans>

@@ -1,7 +1,10 @@
 package com.nanospring;
 
-import org.jboss.errai.reflections.Reflections;
-import org.jboss.errai.reflections.scanners.SubTypesScanner;
+
+
+import com.nanospring.pojo.NanoSpringDI;
+import org.reflections.Reflections;
+import org.reflections.scanners.SubTypesScanner;
 
 import java.lang.reflect.Field;
 import java.util.Set;
@@ -9,10 +12,13 @@ import java.util.Set;
 
 public class Nanospring {
 
-    private Set<Class<? extends Object>> beans;
+    private String packages;
+    private final Set<Class<?>> beans;
 
-    public Nanospring(String str_package) {
-        Reflections reflection = new Reflections(str_package, new SubTypesScanner());
+    public Nanospring(String str_packages) {
+        this.packages=str_packages;
+       // Reflections reflection = new Reflections(packages, new SubTypesScanner(false));
+        Reflections reflection = new Reflections(packages, new SubTypesScanner(false));
         beans = reflection.getSubTypesOf(Object.class);
     }
 
@@ -20,12 +26,12 @@ public class Nanospring {
         for (Class<?> bean : beans) {
             if (bean.equals(type)) {
                 T instance = (T) bean.newInstance();
-                Field[] fields = bean.getDeclaredFields();
+                Field[] fields = instance.getClass().getDeclaredFields();
                 for (Field field : fields
                         ) {
-                    if (field.isAnnotationPresent(Nanoannotation.class)) {
+                    if (field.isAnnotationPresent(NanoSpringDI.class)) {
                         field.setAccessible(true);
-                        field.set(instance, field.getClass().newInstance());
+                        field.set(instance, field.getType().newInstance());
 
                     }
                 }
@@ -33,6 +39,6 @@ public class Nanospring {
             }
 
         }
-        return null;
+        throw new RuntimeException("Anythings goes wrongs");
     }
 }

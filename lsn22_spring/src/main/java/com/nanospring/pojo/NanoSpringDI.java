@@ -1,4 +1,4 @@
-package com.nanospring;
+package com.nanospring.pojo;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,5 @@ import java.lang.annotation.Target;
 
 
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Nanoannotation {
+public @interface NanoSpringDI {
 }
