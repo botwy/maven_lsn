@@ -32,24 +32,25 @@ public class PersonH2DaoService extends AbstractH2DaoService implements PersonDa
                 person.setAge(resultSet.getInt("age"));
             }
 
-            if (person == null) throw new DaoException("Person not found id="+id);
+            if (person == null) throw new DaoException("Person not found id=" + id);
 
             if (resultSet != null) {
                 try {
                     resultSet.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
-                    throw new DaoException("Get person error", e);
+                    throw new DaoException("result set close error", e);
                 }
 
             }
-
+            return person;
         } catch (SQLException e) {
             e.printStackTrace();
+            throw new DaoException("Get person error", e);
         }
 
 
-        return null;
+
     }
 
     @Override
