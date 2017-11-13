@@ -4,8 +4,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/lsn11_thread/pom.xml" />
-        <option value="$PROJECT_DIR$/lsn10_lambda/pom.xml" />
       </list>
     </option>
   </component>

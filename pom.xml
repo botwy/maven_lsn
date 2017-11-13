@@ -11,7 +11,16 @@
     <modules>
         <module>lsn10_lambda</module>
         <module>lsn11_thread</module>
+        <module>lsn12_thread</module>
+        <module>lsn16_jit</module>
+        <module>lsn13_concurrent</module>
+        <module>lsn14_socket</module>
+        <module>lsn18_pattern_project</module>
+        <module>lsn19_pattern_continue</module>
+        <module>lsn21_jdbc</module>
+        <module>lsn22_spring</module>
     </modules>
+
 
 
 </project>

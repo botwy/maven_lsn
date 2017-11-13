@@ -6,13 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lsn10_lambda" />
-        <module name="lsn11_thread" />
+        <module name="maven_lsn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lsn10_lambda" target="1.5" />
-      <module name="lsn11_thread" target="1.5" />
       <module name="maven_lsn" target="1.5" />
     </bytecodeTargetLevel>
   </component>
