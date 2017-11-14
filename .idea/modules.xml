@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/lsn19_pattern_continue/lsn19_pattern_continue.iml" filepath="$PROJECT_DIR$/lsn19_pattern_continue/lsn19_pattern_continue.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsn21_jdbc/lsn21_jdbc.iml" filepath="$PROJECT_DIR$/lsn21_jdbc/lsn21_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsn22_spring/lsn22_spring.iml" filepath="$PROJECT_DIR$/lsn22_spring/lsn22_spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lsn23_spring_jdbc/lsn23_spring_jdbc.iml" filepath="$PROJECT_DIR$/lsn23_spring_jdbc/lsn23_spring_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven_lsn.iml" filepath="$PROJECT_DIR$/maven_lsn.iml" />
     </modules>
   </component>

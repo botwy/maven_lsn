@@ -16,6 +16,7 @@
         <module name="lsn19_pattern_continue" />
         <module name="lsn21_jdbc" />
         <module name="lsn22_spring" />
+        <module name="lsn22_spring_jdbc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="lsn19_pattern_continue" target="1.5" />
       <module name="lsn21_jdbc" target="1.5" />
       <module name="lsn22_spring" target="1.5" />
+      <module name="lsn22_spring_jdbc" target="1.5" />
       <module name="maven_lsn" target="1.5" />
     </bytecodeTargetLevel>
   </component>

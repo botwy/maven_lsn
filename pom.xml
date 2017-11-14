@@ -19,6 +19,7 @@
         <module>lsn19_pattern_continue</module>
         <module>lsn21_jdbc</module>
         <module>lsn22_spring</module>
+        <module>lsn22_spring_jdbc</module>
     </modules>
 
 
