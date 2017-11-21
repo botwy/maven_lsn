@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../maven_hw/hw24_spring_jdbc/hw24_spring_jdbc.iml" filepath="$PROJECT_DIR$/../maven_hw/hw24_spring_jdbc/hw24_spring_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsn10_lambda/lsn10_lambda.iml" filepath="$PROJECT_DIR$/lsn10_lambda/lsn10_lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsn11_thread/lsn11_thread.iml" filepath="$PROJECT_DIR$/lsn11_thread/lsn11_thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsn12_thread/lsn12_thread.iml" filepath="$PROJECT_DIR$/lsn12_thread/lsn12_thread.iml" />
@@ -12,7 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/lsn19_pattern_continue/lsn19_pattern_continue.iml" filepath="$PROJECT_DIR$/lsn19_pattern_continue/lsn19_pattern_continue.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsn21_jdbc/lsn21_jdbc.iml" filepath="$PROJECT_DIR$/lsn21_jdbc/lsn21_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsn22_spring/lsn22_spring.iml" filepath="$PROJECT_DIR$/lsn22_spring/lsn22_spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lsn23_spring_jdbc/lsn23_spring_jdbc.iml" filepath="$PROJECT_DIR$/lsn23_spring_jdbc/lsn23_spring_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven_lsn.iml" filepath="$PROJECT_DIR$/maven_lsn.iml" />
     </modules>
   </component>
