@@ -20,6 +20,7 @@
         <module>lsn21_jdbc</module>
         <module>lsn22_spring</module>
         <module>lsn22_spring_jdbc</module>
+        <module>lsn25_orm</module>
     </modules>
 
 
