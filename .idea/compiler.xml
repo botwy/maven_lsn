@@ -18,6 +18,7 @@
         <module name="lsn21_jdbc" />
         <module name="lsn22_spring" />
         <module name="lsn22_spring_jdbc" />
+        <module name="lsn25_orm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="lsn21_jdbc" target="1.5" />
       <module name="lsn22_spring" target="1.5" />
       <module name="lsn22_spring_jdbc" target="1.5" />
+      <module name="lsn25_orm" target="1.5" />
       <module name="maven_lsn" target="1.5" />
     </bytecodeTargetLevel>
   </component>
